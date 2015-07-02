@@ -66,7 +66,7 @@ def au_cit_map(node,edge,nodefile,edgefile):
     fedge.close()
 
 def evo_au_citmap(year):
-	"""get the author citation map file until certain year"""
+    """get the author citation map file until certain year"""
     papers=[]
     lnode=[]
     ledge=[]
@@ -77,7 +77,7 @@ def evo_au_citmap(year):
                 ledge.append(i)		
     for i in ledge:
         edge.extend(a2b(i))
-    edge=edgeweight(edge)
+    edge=edge_weight(edge)
     for i in ledge:
         papers.extend(i)
     papers=list(set(papers))
