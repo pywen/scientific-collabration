@@ -13,8 +13,8 @@ dic=pickle.load(file('dic.pkl','rb'))
 # authors为作者名并去重
 authors=[]
 for i in dic:
-	for j in i['AF']:
-		authors.append(j)
+    for j in i['AF']:
+        authors.append(j)
 authors=list(set(authors))
 
 # 为作者编号
@@ -22,16 +22,16 @@ auid={}
 aid=1
 for i in authors:
     auid[i]=aid
-		aid+=1
+    aid+=1
 
 def edge_weight(edge):
   """compute the weight of all edges"""
   newedgedir={}
   for i in edge:
     if i not in newedgedir:
-      newedgedir[i]=1
+    	newedgedir[i]=1
     else:
-			newedgedir[i]+=1
+        newedgedir[i]+=1
   newedge=[(i[0],i[1],newedgedir[i]) for i in newedgedir.keys()]
   return newedge
 
