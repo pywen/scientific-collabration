@@ -37,12 +37,12 @@ def edge_weight(edge):
 
 
 def a2b(lin):
-  """each link have two papers, the source and the target, and each paper
-   is coauthored by more than one scientists, this function is used to
-   generated all the edges from the source-authors to the target-authors"""
-	for i in dic:
-		if i['ID']==int(lin[0]):
-			au1=i['AF']
+    """each link have two papers, the source and the target, and each paper
+       is coauthored by more than one scientists, this function is used to
+       generated all the edges from the source-authors to the target-authors"""
+    for i in dic:
+        if i['ID']==int(lin[0]):
+            au1=i['AF']
 	for i in dic:
 		if i['ID']==int(lin[1]):
 			au2=i['AF']
