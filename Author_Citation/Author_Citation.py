@@ -21,8 +21,8 @@ authors=list(set(authors))
 auid={}
 aid=1
 for i in authors:
-	auid[i]=aid
-	aid+=1
+    auid[i]=aid
+		aid+=1
 
 def edge_weight(edge):
   """compute the weight of all edges"""
@@ -38,8 +38,8 @@ def edge_weight(edge):
 
 def a2b(lin):
   """each link have two papers, the source and the target, and each paper
-     is coauthored by more than one scientists, this function is used to
-     generated all the edges from the source-authors to the target-authors"""
+   is coauthored by more than one scientists, this function is used to
+   generated all the edges from the source-authors to the target-authors"""
 	for i in dic:
 		if i['ID']==int(lin[0]):
 			au1=i['AF']
