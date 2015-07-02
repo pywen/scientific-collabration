@@ -8,10 +8,11 @@
 #------------------------------------------------------------------------#
 
 import os
-os.chdir('/home/wen/Experiment/sci-e数据处理终极计划/')
+os.chdir('/home/wen/Experiment/sci-e/')
 
 import Data_Catcher
-names=Data_Catcher.catcher('/home/wen/Experiment/sci-e数据处理终极计划/论文档案/','ER',2047,['AF','AU'])
+names=Data_Catcher.catcher('/home/wen/Experiment/sci-e/论文档案/','ER',\
+                            2047,['AF','AU'])
 
 def list_pair(a,b):
     return [[a[i],b[i]] for i in range(0,len(a))]
